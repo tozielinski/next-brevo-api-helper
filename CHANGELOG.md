@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/tozielinski/next-brevo-api-helper/compare/v1.0.4...v1.0.5) (2025-12-24)
+
+
+### Bug Fixes
+
+* changed two static functions ([d06fd7c](https://github.com/tozielinski/next-brevo-api-helper/commit/d06fd7cec7f5933ead245d6f5687fb66c35b23bd))
+
 ## [1.0.4](https://github.com/tozielinski/next-brevo-api-helper/compare/v1.0.3...v1.0.4) (2025-12-24)
 
 
