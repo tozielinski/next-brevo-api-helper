@@ -368,7 +368,7 @@ export class BrevoClient {
     //
 
     /** Send SMS */
-    static async sendSms(
+    async sendSms(
         sms: BrevoSendSmsRequest
     ): Promise<BrevoApiResponse<BrevoSendSmsResponse>> {
         return brevoFetch<BrevoSendSmsResponse>("/transactionalSMS/sms", {
@@ -384,7 +384,7 @@ export class BrevoClient {
     //
 
     /** Ping Brevo API (GET /account) */
-    static async ping(): Promise<BrevoApiResponse<unknown>> {
+    async ping(): Promise<BrevoApiResponse<unknown>> {
         return brevoFetch("/account", { method: "GET" });
     }
 }
