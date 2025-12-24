@@ -1,6 +1,6 @@
 {
   "name": "@tozielinski/next-brevo-api-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Lightweight helper to use Brevo to send mails via the Brevo API and maintain all",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
