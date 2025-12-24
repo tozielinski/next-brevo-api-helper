@@ -25,13 +25,14 @@ jobs:
 
       - name: Update npm
         run: npm i -g npm@latest
-      - run: npm ci
-      - run: npm run build
-      - name: Configure npm auth
+      - name: Write npmrc
         run: |
+          echo "registry=https://registry.npmjs.org/" > "$NPM_CONFIG_USERCONFIG"
           echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" >> "$NPM_CONFIG_USERCONFIG"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm ci
+      - run: npm run build
       - run: npm whoami --registry=https://registry.npmjs.org
         env:
            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
