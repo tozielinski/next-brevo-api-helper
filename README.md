@@ -21,6 +21,36 @@ import {BrevoClient, BrevoEmailRecipient, BrevoSendEmailRequest} from "@tozielin
 
 const brevoClient = new BrevoClient();
 
+const mail: BrevoSendEmailRequest = {
+    to:
+        [{
+            email: string
+        }]
+    ,
+    // sender: {
+    //     email: string
+    // } satisfies BrevoEmailRecipient,
+    // cc?: BrevoEmailRecipient[];
+    // bcc?: BrevoEmailRecipient[];
+    // replyTo?: {
+    //     email: string,
+    //     name?: string,
+    // } satisfies BrevoEmailRecipient,
+    // subject: string,
+    // htmlContent: string,
+    // textContent: "this is a test content for a mail",
+    // textContent: mailObject.email + "\n" + (fullName.toString() && "\n") + mailObject.phone + "\nVielen Dank für die Anfrage zum Thema '" + mailObject.topic + "'\n\nDeine Nachricht lautet:\n" + mailObject.message,
+    // templateId?: number;
+    // params?: Record<string, string | number | boolean>;
+    // headers?: Record<string, string>;
+    // attachment?: {
+    //     url?: string;
+    //     content?: string; // Base64 encoded
+    //     name?: string;
+    // }[];
+    // tags?: string[];
+};
+
 export async function sendMail() {
     return brevoClient.sendEmail(mail);
 }
