@@ -26,7 +26,7 @@ jobs:
         run: npm i -g npm@latest
       - run: npm ci
       - run: npm run build
-      - run: npm whoami
+      - run: npm whoami --registry=https://registry.npmjs.org
         env:
            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish --access public
