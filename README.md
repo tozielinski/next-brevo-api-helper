@@ -39,8 +39,8 @@ const mail: BrevoSendEmailRequest = {
     // } satisfies BrevoEmailRecipient,
     // subject: string,
     // htmlContent: string,
-    // textContent: "this is a test content for a mail",
-    // textContent: mailObject.email + "\n" + (fullName.toString() && "\n") + mailObject.phone + "\nVielen Dank für die Anfrage zum Thema '" + mailObject.topic + "'\n\nDeine Nachricht lautet:\n" + mailObject.message,
+    // textContent: string,
+    // textContent: string,
     // templateId?: number;
     // params?: Record<string, string | number | boolean>;
     // headers?: Record<string, string>;
