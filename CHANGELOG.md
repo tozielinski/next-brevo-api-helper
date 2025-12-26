@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/tozielinski/next-brevo-api-helper/compare/v1.0.5...v1.0.6) (2025-12-26)
+
+
+### Bug Fixes
+
+* correct error in createListRequest ([3d61845](https://github.com/tozielinski/next-brevo-api-helper/commit/3d6184540dc065a5bbf4cec92560dd9f8cae75e6))
+
 ## [1.0.5](https://github.com/tozielinski/next-brevo-api-helper/compare/v1.0.4...v1.0.5) (2025-12-24)
 
 
