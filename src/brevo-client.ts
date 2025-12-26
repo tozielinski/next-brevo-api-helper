@@ -135,7 +135,7 @@ async function fetchAllPaginated<T extends object>(
         const response = await brevoFetch<T>(url, { method: "GET" });
 
         if (response.status !== 200) {
-            return response; // Fehler durchreichen
+            return response; // error through
         }
 
         items = (response.data?.[responseKey] as any[]) ?? [];
@@ -183,13 +183,21 @@ export class BrevoClient {
     // ────────────────────────────────
     //
 
-    /** Create or update a contact */
+    /** Create a contact */
     async createContact(
         contact: BrevoCreateContactRequest
     ): Promise<BrevoApiResponse<BrevoCreateContactResponse>> {
         return brevoFetch<BrevoCreateContactResponse>("/contacts", {
             method: "POST",
             body: JSON.stringify(contact),
+        });
+    }
+
+    /** Get all contacts */
+    async getContacts() {
+        return brevoFetch<BrevoGetListContactsResponse>("/contacts", {
+            method: "GET",
+            body: JSON.stringify({}),
         });
     }
 

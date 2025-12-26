@@ -148,7 +148,7 @@ export interface BrevoGetListContactsResponse {
 
 export interface BrevoCreateListRequest {
     name: string;
-    folderId?: number;
+    folderId: number;
 }
 
 export interface BrevoCreateListResponse {
