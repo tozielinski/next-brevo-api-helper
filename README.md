@@ -1,6 +1,6 @@
 # next-brevo-api-helper
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/npm/v/%40tozielinski%2Fnext-brevo-api-helper)](https://www.npmjs.com/package/@tozielinski/next-upstash-nonce)
+[![npm version](https://img.shields.io/npm/v/%40tozielinski%2Fnext-brevo-api-helper)](https://www.npmjs.com/package/@tozielinski/next-brevo-api-helper)
 
 ## Using the Brevo API for create, update and delete contacts, folders and lists and send mails via the API
 
